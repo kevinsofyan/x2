@@ -2,42 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e964ca96-ad2c-4d36-90fd-63cefef1c13d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/fda170db74a3de12ae433720b432700fae7e1d62/styles.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.bowerrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/bumn.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.jshintrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gruntfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grunt/options/clean.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grunt/options/copy.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grunt/options/css_sprite.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grunt/options/express.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grunt/options/jshint.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grunt/options/sass.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grunt/options/usemin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grunt/options/useminPrepare.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grunt/options/watch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grunt/tasks/assets.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grunt/tasks/build.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grunt/tasks/default.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grunt/tasks/dev.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grunt/tasks/prod.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/styles.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/app-routes.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/homeController.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/templates/home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="bumn.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -123,8 +89,8 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+            <state relative-caret-position="75">
+              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -418,12 +384,12 @@
       <updated>1488647835876</updated>
       <workItem from="1488647838024" duration="74000" />
       <workItem from="1488648510829" duration="2488000" />
-      <workItem from="1488697510863" duration="3175000" />
+      <workItem from="1488697510863" duration="3269000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5737000" />
+    <option name="totallyTimeSpent" value="5831000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="18" y="0" width="1244" height="800" extended-state="0" />
@@ -808,8 +774,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+        <state relative-caret-position="75">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
