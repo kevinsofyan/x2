@@ -7,12 +7,12 @@ module.exports = {
         ],
         tasks: ['newer:copy:images']
     },
-    less: {
+    sass: {
         files: [
-            'src/css/**/*.less',
-            'src/components/**/*.less'
+            'src/css/*.scss',
+
         ],
-        tasks: ['less:devbuild']
+        tasks: ['sass:devbuild']
     },
     htmljs: {
         files: ['src/index.html','src/js/*.js','src/components/**/*.js'],
@@ -27,7 +27,7 @@ module.exports = {
 //    },
     templates: {
         files: [
-            'src/components/**/*.html'
+            'src/templates/*.html'
         ],
         tasks: ['newer:copy:templates']
     },

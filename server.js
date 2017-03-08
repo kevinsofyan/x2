@@ -8,7 +8,7 @@ app.use(require('connect-livereload')({
 app.use(express.static(__dirname + '/.build'));
 
 app.get('*',function(req,res){
-  res.sendfile('.build/index.html');
+  res.sendFile(__dirname + '/.build/index.html');
 });
 
 app.listen(9001, function() {
