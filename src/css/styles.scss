@@ -4,9 +4,8 @@ body{
 }
 .inner-wrapper{
   width: 90%;
-
   position: relative;
-  background: black;
+  margin: 0 auto;
 }
 .main-wrapper{
 
@@ -16,10 +15,29 @@ body{
   padding: 0;
 }
 
+
 #home-banner{
   height: 100vh;
 
   .carousel{
     height: 100%;
+  }
+}
+
+#home-feature{
+  background:$color-background;
+  height: 500px;
+
+  .feature-list{
+    .owl-item{
+      padding: 10px;
+      .item{
+        @include shadowy;
+        text-align: center;
+        width: 210px;
+        height: 300px;
+        border-radius: 10px;
+      }
+    }
   }
 }

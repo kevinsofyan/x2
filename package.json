@@ -2,7 +2,6 @@
   "name": "angular-grunt-seed",
   "version": "0.0.1",
   "description": "Angular seed project with Grunt and Bower ready.",
-  "private": true,
   "repository": {
     "type": "git",
     "url": ""

@@ -1,1 +1,9 @@
 $image-path: '../../images';
+$color-background: #EFEFEF;
+$color-title: #443E69;
+
+@mixin shadowy{
+    -webkit-box-shadow: 11px 9px 7px -3px rgba(177,177,177,0.79);
+    -moz-box-shadow: 11px 9px 7px -3px rgba(177,177,177,0.79);
+    box-shadow: 11px 9px 7px -3px rgba(177,177,177,0.79);
+}

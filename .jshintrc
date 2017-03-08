@@ -12,7 +12,8 @@
 	"strict": true,
 	"smarttabs": false,
 	"globals": {
-		"angular": true
+		"angular": true,
+		 "$": false
 	},
 	"predef": [
 		"angular",
