@@ -1,20 +1,60 @@
-@import "atoms";
+@import "_atoms";
 body{
   background-color: black;
+  font-family: $font1;
+  font-size: $font-size-standard;
 }
+
+p, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    @extend .np;
+}
+
+.section-wrapper{
+  padding-bottom: 50px !important;
+  background:$color-background;
+  text-align: center;
+  position:relative
+}
+
 .inner-wrapper{
-  width: 90%;
+  max-width: 760px;
   position: relative;
   margin: 0 auto;
 }
-.main-wrapper{
 
-}
+.carousel-list{
+    .owl-item{
+      padding: 10px;
+      .item{
+        @include shadowy;
+        text-align: center;
+        height: 300px;
+        border-radius: 10px;
+        margin: 0 auto;
+        background: white;
+      }
+    }
+  }
+
+
 .np{
   margin: 0;
   padding: 0;
 }
 
+.section-title{
+  margin-top: 60px;
+  margin-bottom: 25px;
+  font-family: $font2;
+  color: $color-title;
+  font-weight: $font-weight-bold;
+}
+
+.section-desc{
+  margin-bottom: 25px;
+  font-family: $font1;
+  color: $color-title;
+}
 
 #home-banner{
   height: 100vh;
@@ -25,19 +65,67 @@ body{
 }
 
 #home-feature{
-  background:$color-background;
-  height: 500px;
+  .list-image{
+  border-radius: 10px 10px 0 0;
+          background: black;
+          height: 60%;
+        }
+        .list-desc{
+          height: 40%;
+        }        
+}
 
-  .feature-list{
-    .owl-item{
-      padding: 10px;
-      .item{
-        @include shadowy;
-        text-align: center;
-        width: 210px;
-        height: 300px;
-        border-radius: 10px;
-      }
+#home-story{
+  background: white;
+  text-align: center;
+}
+
+#home-testimonial{
+  .owl-item{
+    padding-top: 50px;
+    .list-photo,.list-desc{
+       position: relative;
+       top: -45px;
     }
+    .list-photo{
+      width: 130px;
+      height: 130px;
+      background: black;
+      margin: 0 auto;
+      border-radius: 100%;
+    }
+    .list-desc{
+      padding: 0 10px;
+      margin-top: 10px;
+      .desc-name,.desc-job,.desc-location{
+        font-family: $font2;
+       
+      }
+      .desc-name{
+        font-weight: $font-weight-bold;
+        color: #868686;
+      }
+      .desc-job ,.desc-location{ 
+        color: $color-desc;
+        font-size: $font-size-small;
+      }
+      .desc-detail{
+        color:$color-desc;
+        text-align: left;
+        margin-top:10px; 
+        padding-top: 10px;
+        border-top: 1px solid  $color-desc;
+      }
+     
+    }
+  }
+}
+
+#home-video{
+  background: white;
+
+  .youtube-video{
+    width: 100%;
+    height:350px;
   }
 }

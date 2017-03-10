@@ -1,9 +1,19 @@
 $image-path: '../../images';
 $color-background: #EFEFEF;
 $color-title: #443E69;
+$color-text: #626264;
+$color-desc: #BBBBBB;
+$font1: 'Roboto', sans-serif;
+$font2: 'Noto Serif', serif;
+$font-weight-bold: 600;
+$font-size-large: 2em;
+$font-size-mid: 1.7em;
+$font-size-standard: 1.4em;
+$font-size-small: .8em;
 
 @mixin shadowy{
-    -webkit-box-shadow: 11px 9px 7px -3px rgba(177,177,177,0.79);
-    -moz-box-shadow: 11px 9px 7px -3px rgba(177,177,177,0.79);
-    box-shadow: 11px 9px 7px -3px rgba(177,177,177,0.79);
+    -webkit-box-shadow: 2px 4px 7px 0px rgba(138,138,138,0.69);
+-moz-box-shadow: 2px 4px 7px 0px rgba(138,138,138,0.69);
+box-shadow: 2px 4px 7px 0px rgba(138,138,138,0.69);
 }
+

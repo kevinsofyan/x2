@@ -42,7 +42,7 @@ module.exports = {
     images: {
         files: [
             {
-                cwd     : 'src/img/dest/',
+                cwd     : 'src/img/',
                 src     : '**/*',
                 dest    : '.build/img/',
                 flatten : false,
