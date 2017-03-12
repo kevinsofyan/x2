@@ -2,10 +2,17 @@
 
 angular.module('angularGruntSeed')
 
-.config(['$routeProvider', function ($routeProvider) {
-    $routeProvider.when('/', {
-        templateUrl: '/templates/home.html',
-        controller: 'HomeController'
-    })
-    .otherwise({ redirectTo: '/' });
-}]);
+    .config(function($stateProvider, $urlRouterProvider,$locationProvider) {
+
+        $urlRouterProvider.otherwise('/');
+
+        $stateProvider
+
+            .state('home', {
+                url: '/',
+                templateUrl: '/templates/home.html',
+                controller: 'HomeController'
+            })
+
+        $locationProvider.html5Mode(true).hashPrefix('!');
+    });

@@ -1,12 +1,15 @@
 @import "_atoms";
 body{
-  background-color: black;
   font-family: $font1;
   font-size: $font-size-standard;
 }
 
 p, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     @extend .np;
+}
+
+li{
+  list-style-type: none !important;
 }
 
 .section-wrapper{
@@ -17,7 +20,7 @@ p, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 .inner-wrapper{
-  max-width: 760px;
+  max-width: 860px;
   position: relative;
   margin: 0 auto;
 }
@@ -56,8 +59,23 @@ p, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   color: $color-title;
 }
 
+.navbar{
+  background:$color-nav;
+  padding: 10px 0;
+  .nav{
+    float: right;
+    .active{
+      a{
+        background: $color-nav;
+      }
+    }
+  }
+}
+
+
 #home-banner{
   height: 100vh;
+  background: white;
 
   .carousel{
     height: 100%;
@@ -78,6 +96,25 @@ p, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 #home-story{
   background: white;
   text-align: center;
+  .story-category{
+
+    li{
+      font-family: $font2;
+      display: inline-block;
+      border: #7A7A7A solid 1px;
+      padding: 7px 25px;
+      margin: 0 5px;
+      border-radius: 23px;
+      transition: 0.4s;
+      cursor: pointer;
+    }
+
+    li.active{
+      color: white;
+      background: $color-button-active;
+      border: $color-button-active solid 1px;
+    }
+  }
 }
 
 #home-testimonial{

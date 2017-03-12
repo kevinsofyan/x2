@@ -27,7 +27,7 @@ module.exports = {
 //    },
     templates: {
         files: [
-            'src/templates/*.html'
+            'src/templates/*'
         ],
         tasks: ['newer:copy:templates']
     },

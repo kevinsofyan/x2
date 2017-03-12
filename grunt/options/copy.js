@@ -21,7 +21,7 @@ module.exports = {
         files: [
             {
                 cwd     : 'src/templates/',
-                src     : '**/*.html',
+                src     : '**/*',
                 dest    : '.build/templates/',
                 flatten : false,
                 expand  : true
