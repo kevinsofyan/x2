@@ -31,6 +31,12 @@ module.exports = {
         ],
         tasks: ['newer:copy:templates']
     },
+    data: {
+        files: [
+            'src/data/*'
+        ],
+        tasks: ['newer:copy:data']
+    },
     livereload: {
         options: {
             livereload: true

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" ng-app="angularGruntSeed">
+<html lang="en" >
 
 <head>
     <title>Angular Grunt Seed Project</title>
@@ -12,67 +12,456 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.css" rel="stylesheet">
     <link href="css/app.min.css" rel="stylesheet">
-    <base href="/">
+
 </head>
 
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a href="#"><img src="img/Icon-digital-AOM.png"></a>
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#"><img src="img/Icon-digital-AOM.png"></a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="home-feature">Pendampingan</a>
+                </li>
+                <li><a href="#home-story">Kisah Sukses</a>
+                </li>
+                <li><a href="#home-testimonial">Testimonial</a>
+                </li>
+                <li><a href="#home-video">Video</a>
+                </li>
+                <li><a href="#home-documentation">Dokumentasi</a>
+                </li>
+            </ul>
+        </div>
+        <!--/.nav-collapse -->
+    </div>
+</div>
+
+<div class="container-fluid main-wrapper" id="home-page">
+    <div class="row">
+        <div class="col-md-12 np" id="home-banner">
+            <div class="row inner-wrapper">
+                <div id="carousel-banner" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-banner" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-banner" data-slide-to="1"></li>
+                        <li data-target="#carousel-banner" data-slide-to="2"></li>
+                    </ol>
+
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="img/main-banner-01.jpg">
+                        </div>
+                        <div class="item">
+                            <img src="img/main-banner-02.jpg">
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-banner" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-banner" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+
+                </div>
             </div>
-            <div class="collapse navbar-collapse">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="home-feature">Pendampingan</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 np section-wrapper" id="home-feature">
+            <div class="row  inner-wrapper">
+                <div class="col-md-12">
+                    <h3 class="section-title">
+                        Pelatihan dan Pendampingan
+                    </h3>
+                    <p class="section-desc">
+                        Selama menjadi nasabah ULaMM, nasabah berhak mendapat pelatihan dan <br> pendampingan yang diberikan
+                        oleh PNM dengan gratis
+                    </p>
+                </div>
+            </div>
+            <div class="row inner-wrapper">
+                <div class="owl-carousel-feature owl-theme carousel-list">
+                    <div class="item">
+                        <div class="list-image" style="background: url('img/feature-bg-02.jpg') no-repeat"></div>
+                        <div class="list-desc">
+                            <p>Pelatihan Teknik Pengemasan</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="list-image" style="background: url('img/feature-bg-03.jpg') no-repeat"></div>
+                        <div class="list-desc">
+                            <p>Pelatihan manajemen Keuangan</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="list-image" style="background: url('img/feature-bg-01.jpg') no-repeat"></div>
+                        <div class="list-desc">
+                            <p>Pelatihan Cara Berjualan Secara Online</p>
+                        </div>
+                    </div>
+                    <div class="item" >
+                        <div class="list-image" style="background: url('img/feature-bg-05.jpg') no-repeat"></div>
+                        <div class="list-desc">
+                            <p>Pelatihan Cara Memperluas Pasar</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="list-image" style="background: url('img/feature-bg-04.jpg') no-repeat"></div>
+                        <div class="list-desc">
+                            <p>Pelatihan Cara Akses ke Pasar Modern</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" >
+        <div class="col-md-12 np" id="home-story">
+            <div class="row  inner-wrapper">
+                <div class="col-md-12">
+                    <h3 class="section-title" >
+                        Kisah Sukses Nasabah
+                    </h3>
+                    <p class="section-desc">
+                        Cerita nasabah ULaMM mengembangkan usaha mereka
+                    </p>
+                    <ul class="story-category">
+                        <li class="active"><span>Semua Kategory</span></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="row inner-wrapper">
+                <div data-target="semua" class="owl-carousel-story owl-theme carousel-list">
+                    <div class="item">
+                        <img src="img/story-cover-bakso.jpg">
+                        <a href="img/story-list-bakso-1.jpg" class="button-green"  data-fancybox="bakso">Lihat Kisah Suksesnya</a>
+                        <a href="img/story-list-bakso-2.jpg" data-fancybox="bakso"  style="display: none"></a>
+                        <a href="img/story-list-bakso-3.jpg" data-fancybox="bakso" style="display: none" ></a>
+                        <a href="img/story-list-bakso-4.jpg" data-fancybox="bakso" style="display: none" ></a>
+                        <a href="img/story-list-bakso-5.jpg" data-fancybox="bakso" style="display: none" ></a>
+                        <a href="img/story-list-bakso-6.jpg" data-fancybox="bakso" style="display: none" ></a>
+                        <a href="img/story-list-bakso-7.jpg" data-fancybox="bakso" style="display: none" ></a>
+                        <a href="img/story-list-bakso-8.jpg" data-fancybox="bakso" style="display: none" ></a>
+                    </div>
+                    <div class="item">
+                        <img src="img/story-cover-kripik.jpg">
+                        <a href="img/story-list-kripik-1.jpg" class="button-green"  data-fancybox="kripik">Lihat Kisah Suksesnya</a>
+                        <a href="img/story-list-kripik-2.jpg" data-fancybox="kripik"  style="display: none"></a>
+                        <a href="img/story-list-kripik-3.jpg" data-fancybox="kripik" style="display: none" ></a>
+                        <a href="img/story-list-kripik-4.jpg" data-fancybox="kripik" style="display: none" ></a>
+                        <a href="img/story-list-kripik-5.jpg" data-fancybox="kripik" style="display: none" ></a>
+                        <a href="img/story-list-kripik-6.jpg" data-fancybox="kripik" style="display: none" ></a>
+                        <a href="img/story-list-kripik-7.jpg" data-fancybox="kripik" style="display: none" ></a>
+                        <a href="img/story-list-kripik-8.jpg" data-fancybox="kripik" style="display: none" ></a>
+                        <a href="img/story-list-kripik-9.jpg" data-fancybox="kripik" style="display: none" ></a>
+                    </div>
+                    <div class="item">
+                        <img src="img/story-cover-kue.jpg">
+                        <a href="img/story-list-kue-1.jpg" class="button-green"  data-fancybox="kripik">Lihat Kisah Suksesnya</a>
+                        <a href="img/story-list-kue-2.jpg" data-fancybox="kripik"  style="display: none"></a>
+                        <a href="img/story-list-kue-3.jpg" data-fancybox="kripik" style="display: none" ></a>
+                        <a href="img/story-list-kue-4.jpg" data-fancybox="kripik" style="display: none" ></a>
+                        <a href="img/story-list-kue-5.jpg" data-fancybox="kripik" style="display: none" ></a>
+                        <a href="img/story-list-kue-6.jpg" data-fancybox="kripik" style="display: none" ></a>
+                        <a href="img/story-list-kue-7.jpg" data-fancybox="kripik" style="display: none" ></a>
+                        <a href="img/story-list-kue-8.jpg" data-fancybox="kripik" style="display: none" ></a>
+                    </div>
+                    <div class="item">
+                        <img src="img/story-cover-kelontong.jpg">
+                        <a href="img/story-list-kelontong-1.jpg" class="button-green"  data-fancybox="kripik">Lihat Kisah Suksesnya</a>
+                        <a href="img/story-list-kelontong-2.jpg" data-fancybox="kripik"  style="display: none"></a>
+                        <a href="img/story-list-kelontong-3.jpg" data-fancybox="kripik" style="display: none" ></a>
+                        <a href="img/story-list-kelontong-4.jpg" data-fancybox="kripik" style="display: none" ></a>
+                        <a href="img/story-list-kelontong-5.jpg" data-fancybox="kripik" style="display: none" ></a>
+                        <a href="img/story-list-kelontong-6.jpg" data-fancybox="kripik" style="display: none" ></a>
+                    </div>
+
+                </div>
+                <div data-target="bakso" class="owl-carousel-story owl-theme carousel-list hidden">
+                    <div class="item">
+                        <img src="img/story-cover-bakso.jpg">
+                        <a href="img/story-list-bakso-1.jpg" class="button-green"  data-fancybox="bakso">Lihat Kisah Suksesnya</a>
+                        <a href="img/story-list-bakso-2.jpg" data-fancybox="bakso"  style="display: none"></a>
+                        <a href="img/story-list-bakso-3.jpg" data-fancybox="bakso" style="display: none" ></a>
+                        <a href="img/story-list-bakso-4.jpg" data-fancybox="bakso" style="display: none" ></a>
+                        <a href="img/story-list-bakso-5.jpg" data-fancybox="bakso" style="display: none" ></a>
+                        <a href="img/story-list-bakso-6.jpg" data-fancybox="bakso" style="display: none" ></a>
+                        <a href="img/story-list-bakso-7.jpg" data-fancybox="bakso" style="display: none" ></a>
+                        <a href="img/story-list-bakso-8.jpg" data-fancybox="bakso" style="display: none" ></a>
+                    </div>
+                </div>
+                <div data-target="kripik" class="owl-carousel-story owl-theme carousel-list hidden">
+                    <div class="item">
+                        <img src="img/story-cover-kripik.jpg">
+                        <a href="img/story-list-kripik-1.jpg" class="button-green"  data-fancybox="kripik">Lihat Kisah Suksesnya</a>
+                        <a href="img/story-list-kripik-2.jpg" data-fancybox="kripik"  style="display: none"></a>
+                        <a href="img/story-list-kripik-3.jpg" data-fancybox="kripik" style="display: none" ></a>
+                        <a href="img/story-list-kripik-4.jpg" data-fancybox="kripik" style="display: none" ></a>
+                        <a href="img/story-list-kripik-5.jpg" data-fancybox="kripik" style="display: none" ></a>
+                        <a href="img/story-list-kripik-6.jpg" data-fancybox="kripik" style="display: none" ></a>
+                        <a href="img/story-list-kripik-7.jpg" data-fancybox="kripik" style="display: none" ></a>
+                        <a href="img/story-list-kripik-8.jpg" data-fancybox="kripik" style="display: none" ></a>
+                        <a href="img/story-list-kripik-9.jpg" data-fancybox="kripik" style="display: none" ></a>
+                    </div>
+                </div>
+                <div data-target="kue" class="owl-carousel-story owl-theme carousel-list hidden">
+                    <div class="item">
+                        <img src="img/story-cover-kue.jpg">
+                        <a href="img/story-list-kue-1.jpg" class="button-green"  data-fancybox="kripik">Lihat Kisah Suksesnya</a>
+                        <a href="img/story-list-kue-2.jpg" data-fancybox="kripik"  style="display: none"></a>
+                        <a href="img/story-list-kue-3.jpg" data-fancybox="kripik" style="display: none" ></a>
+                        <a href="img/story-list-kue-4.jpg" data-fancybox="kripik" style="display: none" ></a>
+                        <a href="img/story-list-kue-5.jpg" data-fancybox="kripik" style="display: none" ></a>
+                        <a href="img/story-list-kue-6.jpg" data-fancybox="kripik" style="display: none" ></a>
+                        <a href="img/story-list-kue-7.jpg" data-fancybox="kripik" style="display: none" ></a>
+                        <a href="img/story-list-kue-8.jpg" data-fancybox="kripik" style="display: none" ></a>
+                    </div>
+                </div>
+                <div data-target="kelontong" class="owl-carousel-story owl-theme carousel-list hidden">
+                    <div class="item">
+                        <img src="img/story-cover-kelontong.jpg">
+                        <a href="img/story-list-kelontong-1.jpg" class="button-green"  data-fancybox="kripik">Lihat Kisah Suksesnya</a>
+                        <a href="img/story-list-kelontong-2.jpg" data-fancybox="kripik"  style="display: none"></a>
+                        <a href="img/story-list-kelontong-3.jpg" data-fancybox="kripik" style="display: none" ></a>
+                        <a href="img/story-list-kelontong-4.jpg" data-fancybox="kripik" style="display: none" ></a>
+                        <a href="img/story-list-kelontong-5.jpg" data-fancybox="kripik" style="display: none" ></a>
+                        <a href="img/story-list-kelontong-6.jpg" data-fancybox="kripik" style="display: none" ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 np section-wrapper" id="home-testimonial">
+            <div class="row  inner-wrapper">
+                <div class="col-md-12">
+                    <h3 class="section-title">
+                        Kisah Sukses Nasabah
+                    </h3>
+                    <p class="section-desc">
+                        Selama menjadi nasabah ULaMM, nasabah berhak mendapat pelatihan dan <br> pendampingan yang diberikan
+                        oleh PNM dengan gratis
+                    </p>
+                </div>
+            </div>
+            <div class="row inner-wrapper">
+                <div class="owl-carousel-testimonial owl-theme carousel-list testimonial-list">
+                    <div class="item">
+                        <div class="list-photo" style="background: url('img/testimonial/Ni Ketut Agustini.png')">
+                        </div>
+                        <div class="list-desc">
+                            <p class="desc-name">
+                                Ni Ketut Agustini
+                            </p>
+                            <p class="desc-job">
+                                Pengrajin Endek dan Tenun
+                            </p>
+                            <p class="desc-location">
+                                Denpasar
+                            </p>
+                            <p class="desc-detail">
+                                Menurut saya PNM itu sangat bagus dan juga membangun UKM seperti usaha saya ini
+                            </p>
+                            <div class="desc-expand">&#9662</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="list-photo" style="background: url('img/testimonial/Ade Novik.png')"></div>
+                        <div class="list-desc">
+                            <p class="desc-name">
+                                Ade Novik
+                            </p>
+                            <p class="desc-job">
+                                Pembuat Kripik
+                            </p>
+                            <p class="desc-location">
+                                Bogor
+                            </p>
+                            <p class="desc-detail">
+                                Tidak hanya modal usaha, saya pun di kasih bimbingan dan pelatihan usaha dari PNM untuk kemajuan usaha saya.<br>
+                                Terima kasih PNM
+                            </p>
+                            <div class="desc-expand">&#9662</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="list-photo" style="background: url('img/testimonial/Yusnimar.png')">
+
+                        </div>
+                        <div class="list-desc">
+                            <p class="desc-name">
+                                Yusnimar
+                            </p>
+                            <p class="desc-job">
+                                Pedagan Warung Kopi
+                            </p>
+                            <p class="desc-location">
+                                Aceh
+                            </p>
+                            <p class="desc-detail">
+                                di PNM setelah kita dikasih modal usaha, kita terus diundang ke pelatihan untuk mengembangkan usaha, selain itu kita selalu dikunjungi untuk meninjau usaha kit. Beda dengan bamk lain yang hanya memberikan modal usaha saja. Pokoknya PNM the best
+                            </p>
+                            <div class="desc-expand">&#9662</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="list-photo" style="background: url('img/testimonial/Ike sentosa.png')"></div>
+                        <div class="list-desc">
+                            <p class="desc-name">
+                                Ike Sentosa
+                            </p>
+                            <p class="desc-job">
+                                Pengusaha Jagung Super Manis
+                            </p>
+                            <p class="desc-location">
+                                Padang
+                            </p>
+                            <p class="desc-detail">
+                                Silaturahmi staf dan karyawan PNM sangat bagus dengan nasabahnya, selain itu proses pembiayaan sangat cepat. Terima kasih PNM
+                            </p>
+                            <div class="desc-expand">&#9662</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 section-wrapper np" id="home-video">
+            <div class="row  inner-wrapper">
+                <div class="col-md-12">
+                    <h3 class="section-title">
+                        Video Materi
+                    </h3>
+                    <p class="section-desc">
+                        Video Materi Pelatihan untuk nasabah
+                    </p>
+                </div>
+            </div>
+            <div class="row  inner-wrapper">
+                <div class="col-md-12 np">
+                    <iframe width="500" height="400"
+                            src="https://www.youtube.com/embed/XGSy3_Czz8k?autoplay=0">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 section-wrapper np" id="home-documentation">
+            <div class="row  inner-wrapper">
+                <div class="col-md-12">
+                    <h3 class="section-title">
+                        Dokumentasi
+                    </h3>
+                    <p class="section-desc">
+                        Foto kegiatan pelatihan dan pendampingan yang dilakukan pnm kepada nasabah ULaMM
+                    </p>
+                </div>
+            </div>
+            <div class="row  inner-wrapper">
+                <ul class="documentation-photos np">
+                    <li>
+                        <a href="img/documentation/bakso1.JPG"  data-fancybox="documentation" >
+                            <div class="img" style="background: url('img/documentation/bakso1.JPG');"></div>
+                        </a>
                     </li>
-                    <li><a href="#home-story">Kisah Sukses</a>
+                    <li>
+                        <a href="img/documentation/bakso2.JPG" data-fancybox="documentation" >
+                            <div class="img" style="background: url('img/documentation/bakso2.JPG');"></div>
+                        </a>
                     </li>
-                    <li><a href="#home-testimonial">Testimonial</a>
+                    <li>
+                        <a href="img/documentation/bakso3.JPG" data-fancybox="documentation" >
+                            <div class="img" style="background: url('img/documentation/bakso3.JPG');"></div>
+                        </a>
                     </li>
-                    <li><a href="#home-video">Video</a>
+                    <li>
+                        <a href="img/documentation/bakso4.JPG" data-fancybox="documentation" >
+                            <div class="img" style="background: url('img/documentation/bakso4.JPG');"></div>
+                        </a>
                     </li>
-                    <li><a href="#home-documentation">Dokumentasi</a>
+                    <li>
+                        <a href="img/documentation/kelontong1.JPG" data-fancybox="documentation" >
+                            <div class="img" style="background: url('img/documentation/kelontong1.JPG');"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="img/documentation/kelontong2.JPG" data-fancybox="documentation" >
+                            <div class="img" style="background: url('img/documentation/kelontong2.JPG');"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="img/documentation/kelontong3.JPG" data-fancybox="documentation" >
+                            <div class="img" style="background: url('img/documentation/kelontong3.JPG');"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="img/documentation/kue1.JPG" data-fancybox="documentation" >
+                            <div class="img" style="background: url('img/documentation/kue1.JPG');"></div>
+                        </a>
                     </li>
                 </ul>
             </div>
-            <!--/.nav-collapse -->
         </div>
     </div>
+    <div class="row">
+        <div class="col-md-12 section-wrapper np" id="home-faq">
+            <div class="row  inner-wrapper">
+                <div class="col-md-12">
+                    <h3 class="section-title">
+                        Dokumentasi
+                    </h3>
+                    <p class="section-desc">
+                        Foto kegiatan pelatihan dan pendampingan yang dilakukan pnm kepada nasabah ULaMM
+                    </p>
+                    <div class="button-green"  data-toggle="modal" data-target=".bs-example-modal-lg">Pertanyaan yang sering diajukan</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 section-wrapper np" id="home-footer">
+            <ul class="footer-social">
+                <li><a href=""><img src="img/socmed-facebook-01.png"> </a></li>
+                <li><a href=""><img src="img/socmed-twitter-01.png"> </a></li>
+                <li><a href=""><img src="img/socmed-google-01.png"> </a></li>
+            </ul>
+            <p> &copy 2017 Divisi Pengembangan Kapasitas Usaha | PT PErmodalan Nasional Madani (Persero)<br> All Rights Reserved</p>
+        </div>
+    </div>
+</div>
 
-    <div ui-view></div>
+<!-- build:js js/libs.min.js -->
+<script src="../bower_components/jquery/dist/jquery.js"></script>
+<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../bower_components/fastclick/lib/fastclick.js"></script>
+<script src="../bower_components/OwlCarousel/owl-carousel/owl.carousel.min.js"></script>
+<script src="../bower_components/fancybox/dist/jquery.fancybox.min.js"></script>
+<!-- endbuild -->
 
+<!-- build:js js/app.min.js -->
+<script src="js/attrchange.js"></script>
+<script src="js/script.js"></script>
+<script src="js/story.js"></script>
+<!-- endbuild -->
 
-    <!-- build:js js/libs.min.js -->
-    <script src="../bower_components/jquery/dist/jquery.js"></script>
-    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="../bower_components/angular/angular.js"></script>
-    <script src="../bower_components/angular-animate/angular-animate.js"></script>
-    <script src="../bower_components/angular-resource/angular-resource.js"></script>
-    <script src="../bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
-    <script src="../bower_components/angular-sanitize/angular-sanitize.js"></script>
-    <script src="../bower_components/angular-touch/angular-touch.js"></script>
-    <script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
-    <script src="../bower_components/fastclick/lib/fastclick.js"></script>
-
-    <!-- owl -->
-    <script src="../bower_components/OwlCarousel/owl-carousel/owl.carousel.min.js"></script>
-    <!-- main -->
-
-    <!-- endbuild -->
-
-    <!-- build:js js/app.min.js -->
-    <script src="js/app.js"></script>
-    <script src="js/app-routes.js"></script>
-    <script src="js/homeController.js"></script>
-    <!-- endbuild -->
-    <script src="templates/script.js"></script>
 
 </body>
 

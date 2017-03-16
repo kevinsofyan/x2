@@ -3,14 +3,19 @@
  */
 'use strict';
 $(document).ready(function () {
+
+    $("[data-fancybox]").fancybox({
+        // Options will go here
+    });
+
+    /* carousel */
     $('.carousel').carousel({
         interval: 3000
     });
-
     $('.carousel').carousel('cycle');
 
-    $('.owl-carousel').owlCarousel({
-        items: 4,
+    $('.owl-carousel-feature').owlCarousel({
+        items: 5,
         loop: true,
         margin: 10,
         responsive: {
@@ -25,11 +30,17 @@ $(document).ready(function () {
             }
         }
     });
-
-    $('.story-category li').click(function () {
-        alert('anjing');
-        $('.story-category li').removeClass('active');
-        $(this).addClass('active');
+    $('.owl-carousel-testimonial').owlCarousel({
+        items: 4,
+        loop: true
+    });
+    $('.owl-carousel-story').owlCarousel({
+        items: 1,
+        loop: true
+    });
+    $('.owl-carousel-banner').owlCarousel({
+        items: 1,
+        loop: true
     });
 
 });

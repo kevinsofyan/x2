@@ -28,6 +28,17 @@ module.exports = {
             }
         ]
     },
+    data: {
+        files: [
+            {
+                cwd     : 'src/data/',
+                src     : '**/*',
+                dest    : '.build/data/',
+                flatten : false,
+                expand  : true
+            }
+        ]
+    },
     css: {
         files: [
             {

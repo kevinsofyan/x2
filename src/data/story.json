@@ -1,0 +1,29 @@
+{
+  "categories": [
+    {
+      "id":1,
+      "title":"Bakso",
+      "background":"img/story-cover-bakso.jpg",
+      "list":[
+        {
+          "image":"story-list-bakso-1.jpg"
+        }
+      ]
+    },
+    {
+      "id":2,
+      "title":"Kripik",
+      "background":"img/story-cover-kripik.jpg"
+    },
+    {
+      "id":3,
+      "title":"Kue",
+      "background":"img/story-cover-bakso.jpg"
+    },
+    {
+      "id":4,
+      "title":"Warung Klontong",
+      "background":"img/story-cover-kripik.jpg"
+    }
+  ]
+}
