@@ -56,7 +56,7 @@ li{
     padding: 10px;
     .item{
       text-align: center;
-      height: 300px;
+    
       border-radius: 10px;
       margin: 0 auto;
       background: white;
@@ -155,6 +155,7 @@ li{
     .owl-item{
       .item{
         @include shadowy;
+        height: 300px;
       }
 
     }
@@ -252,9 +253,10 @@ li{
           font-size: $font-size-small;
         }
         .desc-detail{
+           font-size: .9em; 
           color:$color-desc;
           text-align: left;
-          margin-top:10px;
+          margin-top:20px;
           padding: 10px;
           border-top: 1px solid  $color-desc;
         }
@@ -363,6 +365,17 @@ li{
     float: none;
     text-align: center;
   }
+  .header-faq{
+    h2{
+      font-size: 1.5em;
+      margin-top: 6px;
+    }
+  }
+  .header-faq .back {
+    
+    top: -6px;
+   
+}
 }
 
 @media(max-width:480px) {

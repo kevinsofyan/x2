@@ -1,4 +1,104 @@
-#faq-nav{
+.header-faq{
+  height: 50px;
+  width: 100%;
+  background: #120355;
+  position: fixed;
+  z-index: 999;
+  text-align: center;
+  .back{
+    color:white;
+    left: 0px;
+    font-size: 35px;
+    position: absolute;
+  }
+  h2{
+    font-size: $font-size-large;
+    padding-top: 8px;
+    font-family: $font1;
+    color:white;
+  }
+}
+
+#faq-page{
+  padding-top: 50px;
+  #faq-nav{
   background: #1B6AB3;
   height: auto;
+  li{
+    list-style-type: decimal !important;
+    color: white !important;
+    padding-left: 0px;
+    margin: 15px;
+    a{
+      color: white !important;
+    }
+  } 
+}
+
+.question{
+  padding: 20px;
+  h2{
+    margin-bottom: 10px;
+    font-family: $font2;
+  }
+  p{
+    line-height: 2;
+  }
+  li{
+    list-style-type: disc !important;
+    margin: 10px;
+  }
+  ol{
+    li{
+      list-style-type: decimal !important;
+    }
+  }
+  .inner-question{
+    padding-left: 20px;
+    
+  }
+  #Sekilas-PNM.inner-question{
+    border-left: solid 4px #120259;
+    h2{
+      color: #120259;
+    }
+  }
+  #Mengenal-ULaMM.inner-question{
+    border-left: solid 4px #016AB6;
+    h2{
+      color: #016AB6;
+    }
+  }
+  #Perbedaan-ULaMM.inner-question{
+    border-left: solid 4px #D56C12;
+    h2{
+      color: #D56C12;
+    }
+  }
+  #Jangka-waktu.inner-question{
+    border-left: solid 4px #BCDA83;
+    h2{
+      color: #BCDA83;
+    }
+  }
+   #Pelatihan.inner-question{
+    border-left: solid 4px #12064D;
+    h2{
+      color: #12064D;
+    }
+  }
+  #Biaya.inner-question{
+    border-left: solid 4px #1E67A7;
+    h2{
+      color: #1E67A7;
+    }
+  }
+  #Tugas.inner-question{
+    border-left: solid 4px #C36B27;
+    h2{
+      color: #C36B27;
+    }
+  }
+
+}
 }
