@@ -15,7 +15,7 @@ module.exports = {
         tasks: ['sass:devbuild']
     },
     htmljs: {
-        files: ['src/index.html','src/js/*.js','src/components/**/*.js'],
+        files: ['src/*.html','src/js/*.js','src/components/**/*.js'],
         tasks: ['useminPrepare','copy:build','concat','copy:temptobuild','usemin','newer:jshint:all']
     },
 //    grunt: {

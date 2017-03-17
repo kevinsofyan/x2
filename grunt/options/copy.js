@@ -3,7 +3,10 @@
 module.exports = {
     build: {
         files: [
-            { '.build/index.html': 'src/index.html' }
+            {
+                '.build/index.html': 'src/index.html',
+                '.build/faq.html': 'src/faq.html'
+            }
         ]
     },
     temptobuild: {

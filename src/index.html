@@ -2,7 +2,7 @@
 <html lang="en" >
 
 <head>
-    <title>Angular Grunt Seed Project</title>
+    <title>Aplikasi Panduan Digital AOM</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -18,20 +18,20 @@
 </head>
 
 <body>
-<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+<div class="navbar navbar-fixed-top" role="navigation">
     <div class="container">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"  data-target=".navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="#"><img src="img/Icon-digital-AOM.png"></a>
+            <a href="#"><img src="img/ULaMM-PNM-Logo.png" width="130" style="margin: 8px"></a>
         </div>
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="home-feature">Pendampingan</a>
+                <li class="active"><a href="#home-feature">Pendampingan</a>
                 </li>
                 <li><a href="#home-story">Kisah Sukses</a>
                 </li>
@@ -50,12 +50,11 @@
 <div class="container-fluid main-wrapper" id="home-page">
     <div class="row">
         <div class="col-md-12 np" id="home-banner">
-            <div class="row inner-wrapper">
+            <div class="row banner-wrapper">
                 <div id="carousel-banner" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#carousel-banner" data-slide-to="0" class="active"></li>
                         <li data-target="#carousel-banner" data-slide-to="1"></li>
-                        <li data-target="#carousel-banner" data-slide-to="2"></li>
                     </ol>
 
                     <div class="carousel-inner" role="listbox">
@@ -140,60 +139,64 @@
                     <p class="section-desc">
                         Cerita nasabah ULaMM mengembangkan usaha mereka
                     </p>
-                    <ul class="story-category">
-                        <li class="active"><span>Semua Kategory</span></li>
+                    <ul class="story-category np">
+                        <li class="active" data-target="#story-semua"><span>Semua Kategory</span></li>
+                        <li data-target="#story-bakso"><span>bakso</span></li>
+                        <li data-target="#story-kripik"><span>kripik</span></li>
+                        <li data-target="#story-kue"><span>kue</span></li>
+                        <li data-target="#story-kelontong"><span>kelontong</span></li>
                     </ul>
                 </div>
 
             </div>
-            <div class="row inner-wrapper">
-                <div data-target="semua" class="owl-carousel-story owl-theme carousel-list">
+            <div class="row inner-wrapper stories">
+                <div id="story-semua" class="owl-carousel-story owl-theme carousel-list">
                     <div class="item">
                         <img src="img/story-cover-bakso.jpg">
-                        <a href="img/story-list-bakso-1.jpg" class="button-green"  data-fancybox="bakso">Lihat Kisah Suksesnya</a>
-                        <a href="img/story-list-bakso-2.jpg" data-fancybox="bakso"  style="display: none"></a>
-                        <a href="img/story-list-bakso-3.jpg" data-fancybox="bakso" style="display: none" ></a>
-                        <a href="img/story-list-bakso-4.jpg" data-fancybox="bakso" style="display: none" ></a>
-                        <a href="img/story-list-bakso-5.jpg" data-fancybox="bakso" style="display: none" ></a>
-                        <a href="img/story-list-bakso-6.jpg" data-fancybox="bakso" style="display: none" ></a>
-                        <a href="img/story-list-bakso-7.jpg" data-fancybox="bakso" style="display: none" ></a>
-                        <a href="img/story-list-bakso-8.jpg" data-fancybox="bakso" style="display: none" ></a>
+                        <a href="img/story-list-bakso-1.jpg" class="button-green"  data-fancybox="all-bakso">Lihat Kisah Suksesnya</a>
+                        <a href="img/story-list-bakso-2.jpg" data-fancybox="all-bakso"  style="display: none"></a>
+                        <a href="img/story-list-bakso-3.jpg" data-fancybox="all-bakso" style="display: none" ></a>
+                        <a href="img/story-list-bakso-4.jpg" data-fancybox="all-bakso" style="display: none" ></a>
+                        <a href="img/story-list-bakso-5.jpg" data-fancybox="all-bakso" style="display: none" ></a>
+                        <a href="img/story-list-bakso-6.jpg" data-fancybox="all-bakso" style="display: none" ></a>
+                        <a href="img/story-list-bakso-7.jpg" data-fancybox="all-bakso" style="display: none" ></a>
+                        <a href="img/story-list-bakso-8.jpg" data-fancybox="all-bakso" style="display: none" ></a>
                     </div>
                     <div class="item">
                         <img src="img/story-cover-kripik.jpg">
-                        <a href="img/story-list-kripik-1.jpg" class="button-green"  data-fancybox="kripik">Lihat Kisah Suksesnya</a>
-                        <a href="img/story-list-kripik-2.jpg" data-fancybox="kripik"  style="display: none"></a>
-                        <a href="img/story-list-kripik-3.jpg" data-fancybox="kripik" style="display: none" ></a>
-                        <a href="img/story-list-kripik-4.jpg" data-fancybox="kripik" style="display: none" ></a>
-                        <a href="img/story-list-kripik-5.jpg" data-fancybox="kripik" style="display: none" ></a>
-                        <a href="img/story-list-kripik-6.jpg" data-fancybox="kripik" style="display: none" ></a>
-                        <a href="img/story-list-kripik-7.jpg" data-fancybox="kripik" style="display: none" ></a>
-                        <a href="img/story-list-kripik-8.jpg" data-fancybox="kripik" style="display: none" ></a>
-                        <a href="img/story-list-kripik-9.jpg" data-fancybox="kripik" style="display: none" ></a>
+                        <a href="img/story-list-kripik-1.jpg" class="button-green"  data-fancybox="all-kripik">Lihat Kisah Suksesnya</a>
+                        <a href="img/story-list-kripik-2.jpg" data-fancybox="all-kripik"  style="display: none"></a>
+                        <a href="img/story-list-kripik-3.jpg" data-fancybox="all-kripik" style="display: none" ></a>
+                        <a href="img/story-list-kripik-4.jpg" data-fancybox="all-kripik" style="display: none" ></a>
+                        <a href="img/story-list-kripik-5.jpg" data-fancybox="all-kripik" style="display: none" ></a>
+                        <a href="img/story-list-kripik-6.jpg" data-fancybox="all-kripik" style="display: none" ></a>
+                        <a href="img/story-list-kripik-7.jpg" data-fancybox="all-kripik" style="display: none" ></a>
+                        <a href="img/story-list-kripik-8.jpg" data-fancybox="all-kripik" style="display: none" ></a>
+                        <a href="img/story-list-kripik-9.jpg" data-fancybox="all-kripik" style="display: none" ></a>
                     </div>
                     <div class="item">
                         <img src="img/story-cover-kue.jpg">
-                        <a href="img/story-list-kue-1.jpg" class="button-green"  data-fancybox="kripik">Lihat Kisah Suksesnya</a>
-                        <a href="img/story-list-kue-2.jpg" data-fancybox="kripik"  style="display: none"></a>
-                        <a href="img/story-list-kue-3.jpg" data-fancybox="kripik" style="display: none" ></a>
-                        <a href="img/story-list-kue-4.jpg" data-fancybox="kripik" style="display: none" ></a>
-                        <a href="img/story-list-kue-5.jpg" data-fancybox="kripik" style="display: none" ></a>
-                        <a href="img/story-list-kue-6.jpg" data-fancybox="kripik" style="display: none" ></a>
-                        <a href="img/story-list-kue-7.jpg" data-fancybox="kripik" style="display: none" ></a>
-                        <a href="img/story-list-kue-8.jpg" data-fancybox="kripik" style="display: none" ></a>
+                        <a href="img/story-list-kue-1.jpg" class="button-green"  data-fancybox="all-kue">Lihat Kisah Suksesnya</a>
+                        <a href="img/story-list-kue-2.jpg" data-fancybox="all-kue"  style="display: none"></a>
+                        <a href="img/story-list-kue-3.jpg" data-fancybox="all-kue" style="display: none" ></a>
+                        <a href="img/story-list-kue-4.jpg" data-fancybox="all-kue" style="display: none" ></a>
+                        <a href="img/story-list-kue-5.jpg" data-fancybox="all-kue" style="display: none" ></a>
+                        <a href="img/story-list-kue-6.jpg" data-fancybox="all-kue" style="display: none" ></a>
+                        <a href="img/story-list-kue-7.jpg" data-fancybox="all-kue" style="display: none" ></a>
+                        <a href="img/story-list-kue-8.jpg" data-fancybox="all-kue" style="display: none" ></a>
                     </div>
                     <div class="item">
                         <img src="img/story-cover-kelontong.jpg">
-                        <a href="img/story-list-kelontong-1.jpg" class="button-green"  data-fancybox="kripik">Lihat Kisah Suksesnya</a>
-                        <a href="img/story-list-kelontong-2.jpg" data-fancybox="kripik"  style="display: none"></a>
-                        <a href="img/story-list-kelontong-3.jpg" data-fancybox="kripik" style="display: none" ></a>
-                        <a href="img/story-list-kelontong-4.jpg" data-fancybox="kripik" style="display: none" ></a>
-                        <a href="img/story-list-kelontong-5.jpg" data-fancybox="kripik" style="display: none" ></a>
-                        <a href="img/story-list-kelontong-6.jpg" data-fancybox="kripik" style="display: none" ></a>
+                        <a href="img/story-list-klontong-1.jpg" class="button-green"  data-fancybox="all-kelontong">Lihat Kisah Suksesnya</a>
+                        <a href="img/story-list-klontong-2.jpg" data-fancybox="all-kelontong"  style="display: none"></a>
+                        <a href="img/story-list-klontong-3.jpg" data-fancybox="all-kelontong" style="display: none" ></a>
+                        <a href="img/story-list-klontong-4.jpg" data-fancybox="all-kelontong" style="display: none" ></a>
+                        <a href="img/story-list-klontong-5.jpg" data-fancybox="all-kelontong" style="display: none" ></a>
+                        <a href="img/story-list-klontong-6.jpg" data-fancybox="all-kelontong" style="display: none" ></a>
                     </div>
 
                 </div>
-                <div data-target="bakso" class="owl-carousel-story owl-theme carousel-list hidden">
+                <div id="story-bakso" class="owl-carousel-story owl-theme carousel-list hidden">
                     <div class="item">
                         <img src="img/story-cover-bakso.jpg">
                         <a href="img/story-list-bakso-1.jpg" class="button-green"  data-fancybox="bakso">Lihat Kisah Suksesnya</a>
@@ -206,7 +209,7 @@
                         <a href="img/story-list-bakso-8.jpg" data-fancybox="bakso" style="display: none" ></a>
                     </div>
                 </div>
-                <div data-target="kripik" class="owl-carousel-story owl-theme carousel-list hidden">
+                <div id="story-kripik" class="owl-carousel-story owl-theme carousel-list hidden">
                     <div class="item">
                         <img src="img/story-cover-kripik.jpg">
                         <a href="img/story-list-kripik-1.jpg" class="button-green"  data-fancybox="kripik">Lihat Kisah Suksesnya</a>
@@ -220,28 +223,28 @@
                         <a href="img/story-list-kripik-9.jpg" data-fancybox="kripik" style="display: none" ></a>
                     </div>
                 </div>
-                <div data-target="kue" class="owl-carousel-story owl-theme carousel-list hidden">
+                <div id="story-kue" class="owl-carousel-story owl-theme carousel-list hidden">
                     <div class="item">
                         <img src="img/story-cover-kue.jpg">
-                        <a href="img/story-list-kue-1.jpg" class="button-green"  data-fancybox="kripik">Lihat Kisah Suksesnya</a>
-                        <a href="img/story-list-kue-2.jpg" data-fancybox="kripik"  style="display: none"></a>
-                        <a href="img/story-list-kue-3.jpg" data-fancybox="kripik" style="display: none" ></a>
-                        <a href="img/story-list-kue-4.jpg" data-fancybox="kripik" style="display: none" ></a>
-                        <a href="img/story-list-kue-5.jpg" data-fancybox="kripik" style="display: none" ></a>
-                        <a href="img/story-list-kue-6.jpg" data-fancybox="kripik" style="display: none" ></a>
-                        <a href="img/story-list-kue-7.jpg" data-fancybox="kripik" style="display: none" ></a>
-                        <a href="img/story-list-kue-8.jpg" data-fancybox="kripik" style="display: none" ></a>
+                        <a href="img/story-list-kue-1.jpg" class="button-green"  data-fancybox="kue">Lihat Kisah Suksesnya</a>
+                        <a href="img/story-list-kue-2.jpg" data-fancybox="kue"  style="display: none"></a>
+                        <a href="img/story-list-kue-3.jpg" data-fancybox="kue" style="display: none" ></a>
+                        <a href="img/story-list-kue-4.jpg" data-fancybox="kue" style="display: none" ></a>
+                        <a href="img/story-list-kue-5.jpg" data-fancybox="kue" style="display: none" ></a>
+                        <a href="img/story-list-kue-6.jpg" data-fancybox="kue" style="display: none" ></a>
+                        <a href="img/story-list-kue-7.jpg" data-fancybox="kue" style="display: none" ></a>
+                        <a href="img/story-list-kue-8.jpg" data-fancybox="kue" style="display: none" ></a>
                     </div>
                 </div>
-                <div data-target="kelontong" class="owl-carousel-story owl-theme carousel-list hidden">
+                <div id="story-kelontong" class="owl-carousel-story owl-theme carousel-list hidden">
                     <div class="item">
                         <img src="img/story-cover-kelontong.jpg">
-                        <a href="img/story-list-kelontong-1.jpg" class="button-green"  data-fancybox="kripik">Lihat Kisah Suksesnya</a>
-                        <a href="img/story-list-kelontong-2.jpg" data-fancybox="kripik"  style="display: none"></a>
-                        <a href="img/story-list-kelontong-3.jpg" data-fancybox="kripik" style="display: none" ></a>
-                        <a href="img/story-list-kelontong-4.jpg" data-fancybox="kripik" style="display: none" ></a>
-                        <a href="img/story-list-kelontong-5.jpg" data-fancybox="kripik" style="display: none" ></a>
-                        <a href="img/story-list-kelontong-6.jpg" data-fancybox="kripik" style="display: none" ></a>
+                        <a href="img/story-list-klontong-1.jpg" class="button-green"  data-fancybox="kelontong">Lihat Kisah Suksesnya</a>
+                        <a href="img/story-list-klontong-2.jpg" data-fancybox="kelontong"  style="display: none"></a>
+                        <a href="img/story-list-klontong-3.jpg" data-fancybox="kelontong" style="display: none" ></a>
+                        <a href="img/story-list-klontong-4.jpg" data-fancybox="kelontong" style="display: none" ></a>
+                        <a href="img/story-list-klontong-5.jpg" data-fancybox="kelontong" style="display: none" ></a>
+                        <a href="img/story-list-klontong-6.jpg" data-fancybox="kelontong" style="display: none" ></a>
                     </div>
                 </div>
             </div>
@@ -356,9 +359,7 @@
             </div>
             <div class="row  inner-wrapper">
                 <div class="col-md-12 np">
-                    <iframe width="500" height="400"
-                            src="https://www.youtube.com/embed/XGSy3_Czz8k?autoplay=0">
-                    </iframe>
+                    <iframe  class="yutub" src="https://www.youtube.com/embed/r6os8094M9c" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -378,43 +379,53 @@
             <div class="row  inner-wrapper">
                 <ul class="documentation-photos np">
                     <li>
-                        <a href="img/documentation/bakso1.JPG"  data-fancybox="documentation" >
+                        <a href="img/documentation/bakso1.JPG"  data-fancybox="documentation" data-caption="Bakso 1" >
                             <div class="img" style="background: url('img/documentation/bakso1.JPG');"></div>
                         </a>
                     </li>
                     <li>
-                        <a href="img/documentation/bakso2.JPG" data-fancybox="documentation" >
+                        <a href="img/documentation/bakso2.JPG" data-fancybox="documentation" data-caption="Bakso 2">
                             <div class="img" style="background: url('img/documentation/bakso2.JPG');"></div>
                         </a>
                     </li>
                     <li>
-                        <a href="img/documentation/bakso3.JPG" data-fancybox="documentation" >
+                        <a href="img/documentation/bakso3.JPG" data-fancybox="documentation" data-caption="Bakso 3">
                             <div class="img" style="background: url('img/documentation/bakso3.JPG');"></div>
                         </a>
                     </li>
                     <li>
-                        <a href="img/documentation/bakso4.JPG" data-fancybox="documentation" >
+                        <a href="img/documentation/bakso4.JPG" data-fancybox="documentation" data-caption="Bakso 4">
                             <div class="img" style="background: url('img/documentation/bakso4.JPG');"></div>
                         </a>
                     </li>
                     <li>
-                        <a href="img/documentation/kelontong1.JPG" data-fancybox="documentation" >
+                        <a href="img/documentation/kelontong1.JPG" data-fancybox="documentation" data-caption="Kelontong 1" >
                             <div class="img" style="background: url('img/documentation/kelontong1.JPG');"></div>
                         </a>
                     </li>
                     <li>
-                        <a href="img/documentation/kelontong2.JPG" data-fancybox="documentation" >
+                        <a href="img/documentation/kelontong2.JPG" data-fancybox="documentation" data-caption="Kelontong 2" >
                             <div class="img" style="background: url('img/documentation/kelontong2.JPG');"></div>
                         </a>
                     </li>
                     <li>
-                        <a href="img/documentation/kelontong3.JPG" data-fancybox="documentation" >
+                        <a href="img/documentation/kelontong3.JPG" data-fancybox="documentation" data-caption="Kelontong 3" >
                             <div class="img" style="background: url('img/documentation/kelontong3.JPG');"></div>
                         </a>
                     </li>
                     <li>
-                        <a href="img/documentation/kue1.JPG" data-fancybox="documentation" >
+                        <a href="img/documentation/kue1.JPG" data-fancybox="documentation" data-caption="Kue 1">
                             <div class="img" style="background: url('img/documentation/kue1.JPG');"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="img/documentation/kue2.JPG" data-fancybox="documentation" data-caption="Kue 2" >
+                            <div class="img" style="background: url('img/documentation/kue2.JPG');"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="img/documentation/kue3.JPG" data-fancybox="documentation" data-caption="Kue 3" >
+                            <div class="img" style="background: url('img/documentation/kue3.JPG');"></div>
                         </a>
                     </li>
                 </ul>
@@ -426,12 +437,12 @@
             <div class="row  inner-wrapper">
                 <div class="col-md-12">
                     <h3 class="section-title">
-                        Dokumentasi
+                        Panduan Umum
                     </h3>
                     <p class="section-desc">
                         Foto kegiatan pelatihan dan pendampingan yang dilakukan pnm kepada nasabah ULaMM
                     </p>
-                    <div class="button-green"  data-toggle="modal" data-target=".bs-example-modal-lg">Pertanyaan yang sering diajukan</div>
+                    <div class="button-green"  data-toggle="modal" >Pertanyaan yang sering diajukan</div>
                 </div>
             </div>
         </div>
@@ -443,13 +454,13 @@
                 <li><a href=""><img src="img/socmed-twitter-01.png"> </a></li>
                 <li><a href=""><img src="img/socmed-google-01.png"> </a></li>
             </ul>
-            <p> &copy 2017 Divisi Pengembangan Kapasitas Usaha | PT PErmodalan Nasional Madani (Persero)<br> All Rights Reserved</p>
+            <p> &copy 2017 PT Permodalan Nasional Madani (Persero)<br> All Rights Reserved</p>
         </div>
     </div>
 </div>
 
 <!-- build:js js/libs.min.js -->
-<script src="../bower_components/jquery/dist/jquery.js"></script>
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
 <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="../bower_components/fastclick/lib/fastclick.js"></script>
 <script src="../bower_components/OwlCarousel/owl-carousel/owl.carousel.min.js"></script>
