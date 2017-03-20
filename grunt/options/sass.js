@@ -12,8 +12,7 @@ module.exports = {
     },
     build: {
         options: {
-            compress: true,
-            cleancss: true
+            style: 'compressed'
         },
         files: {
             '.build/css/app.min.css': 'src/css/styles.scss'

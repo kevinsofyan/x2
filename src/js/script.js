@@ -58,7 +58,7 @@ $(document).ready(function () {
         var height = $(target).offset().top;
         body.stop().animate({scrollTop: height -40}, '500', 'swing', function() {
         });
-    })
+    });
 
      $('#faq-nav li').click(function () {
         var body = $("html, body");
@@ -66,11 +66,43 @@ $(document).ready(function () {
         var height = $(target).offset().top;
         body.stop().animate({scrollTop: height -60}, '500', 'swing', function() {
         });
-    })
+    });
+
+    $('.back-top').click(function () {
+        var body = $("html, body");
+        var target = $(this).find("a").attr("href");
+        var height = $(target).offset().top;
+        body.stop().animate({scrollTop: height}, '500', 'swing', function() {
+        });
+    });
+
+    $(window).scroll(function() {
+
+        var hT = $('#faq-content').offset().top,
+            hH = $('#faq-content').outerHeight(),
+            wH = $(window).height(),
+            wS = $(this).scrollTop();
+        if (wS > (hT+hH-wH)){
+            $('.back-top').css(
+                "position","absolute"
+            );
+        }
+        else {
+            $('.back-top').css(
+                "position","fixed"
+            );
+        }
+    });
+
 
     $('.nav a').on('click', function(){
         $('.btn-navbar').click(); //bootstrap 2.x
         $('.navbar-toggle').click() //bootstrap 3.x by Richard
+    });
+
+    $('.documentation-more').on('click', function () {
+        $('.doc-hide').slideDown();
+        $(this).remove();
     });
 
 });
